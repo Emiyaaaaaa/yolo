@@ -1,7 +1,7 @@
 <annotation>
-	<folder>images</folder>
+	<folder>1</folder>
 	<filename>1_81.jpg</filename>
-	<path>D:\Program Files (x86)\pywork\YOLO5\yolov5\VOCData\images\1_81.jpg</path>
+	<path>D:\存储\BaiduNetdiskDownload\fire_detection\VOC2020\1\1_81.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -41,8 +41,8 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>202</xmin>
-			<ymin>202</ymin>
+			<xmin>208</xmin>
+			<ymin>199</ymin>
 			<xmax>248</xmax>
 			<ymax>220</ymax>
 		</bndbox>

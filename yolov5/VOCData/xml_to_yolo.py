@@ -24,8 +24,8 @@ def convert(size, box):
 
 
 def convert_annotation(image_id):
-    in_file = open('../VOCData/Annotations/%s.xml' % (image_id), encoding='UTF-8')
-    out_file = open('../VOCData/labels2/%s.txt' % (image_id), 'w')
+    in_file = open('Annotations/%s.xml' % (image_id), encoding='UTF-8')
+    out_file = open('labels/%s.txt' % (image_id), 'w')
     tree = ET.parse(in_file)
     root = tree.getroot()
     size = root.find('size')
@@ -54,16 +54,16 @@ def convert_annotation(image_id):
 
 wd = getcwd()
 for image_set in sets:
-    if not os.path.exists('../VOCData/labels2'):
-        os.makedirs('../VOCData/labels2')
-    image_ids = open('../VOCData/ImageSets/Main/%s.txt' % (image_set)).read().strip().split()
+    if not os.path.exists('labels/'):
+        os.makedirs('labels/')
+    image_ids = open('ImageSets/Main/%s.txt' % (image_set)).read().strip().split()
 
-    if not os.path.exists('../VOCData/dataSet_path'):
-        os.makedirs('../VOCData/dataSet_path')
+    if not os.path.exists('dataSet_path/'):
+        os.makedirs('dataSet_path/')
 
-    list_file = open('../VOCData/dataSet_path/%s.txt' % (image_set), 'w')
+    list_file = open('dataSet_path/%s.txt' % (image_set), 'w')
     # 这行路径不需更改，这是相对路径
     for image_id in image_ids:
-        list_file.write('../VOCData/images/%s.jpg\n' % (image_id))
+        list_file.write('D:/Program Files (x86)/pywork/YOLO5/yolov5/VOCData/images/%s.jpg\n' % (image_id))
         convert_annotation(image_id)
     list_file.close()

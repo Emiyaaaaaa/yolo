@@ -1,5 +1,5 @@
-train: VOCData/dataSet_path/train.txt
-val: VOCData/dataSet_path/val.txt
+train: D:/Program Files (x86)/pywork/YOLO5/yolov5/VOCData/dataSet_path/train.txt
+val: D:/Program Files (x86)/pywork/YOLO5/yolov5/VOCData/dataSet_path/val.txt
 
 # number of classes
 nc: 1

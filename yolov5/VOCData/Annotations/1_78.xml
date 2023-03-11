@@ -1,7 +1,7 @@
 <annotation>
-	<folder>images</folder>
+	<folder>1</folder>
 	<filename>1_78.jpg</filename>
-	<path>D:\Program Files (x86)\pywork\YOLO5\yolov5\VOCData\images\1_78.jpg</path>
+	<path>D:\存储\BaiduNetdiskDownload\fire_detection\VOC2020\1\1_78.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -21,18 +21,6 @@
 			<ymin>59</ymin>
 			<xmax>216</xmax>
 			<ymax>198</ymax>
-		</bndbox>
-	</object>
-	<object>
-		<name>fire</name>
-		<pose>Unspecified</pose>
-		<truncated>0</truncated>
-		<difficult>0</difficult>
-		<bndbox>
-			<xmin>209</xmin>
-			<ymin>200</ymin>
-			<xmax>254</xmax>
-			<ymax>219</ymax>
 		</bndbox>
 	</object>
 </annotation>
