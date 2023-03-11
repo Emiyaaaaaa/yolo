@@ -1,0 +1,5 @@
+train: dataset/MaskDataSet/train/images
+val: dataset/MaskDataSet/valid/images
+
+nc: 2
+names: ['mask', 'no-mask']
